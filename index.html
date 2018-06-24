@@ -2,9 +2,113 @@
 <html>
     <head>
         <title>4308 SCOUT</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     </head>
     <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="#">4308</a>
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Input</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Analysis</a>
+            </li>
+          </ul>
+        </nav>
+
+
+
+        <div class="container">
+            <div class="well">
+                <h1>Data Input</h1>
+                <p>Input your data here!</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="option1" checked>
+                  <label class="form-check-label" for="radio1">
+                    Default radio
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="option2">
+                  <label class="form-check-label" for="radio2">
+                    Second default radio
+                  </label>
+                </div>
+
+                <div class="form-group row">
+                  <label for="teamNum" class="col-sm-2 col-form-label">Team Number</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="teamNum" placeholder="#">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="matchNum" class="col-sm-2 col-form-label">Match Number</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="matchNum" placeholder="#">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="input1" class="col-sm-2 col-form-label">Input 1</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="input1" placeholder="#">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="input2" class="col-sm-2 col-form-label">Input 2</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="input2" placeholder="#">
+                  </div>
+                </div>
+
+
+
+
+                <form>
+                  <div class="form-group">
+                    <label for="data1">1</label>
+                    <input type="text" class="form-control" id="1" placeholder="Enter 1">
+                  </div>
+                  <div class="form-group">
+                    <label for="data2">2</label>
+                    <input type="text" class="form-control" id="2" placeholder="Enter 2">
+                  </div>
+                  <div class="form-group">
+                    <label for="data3">3</label>
+                    <input type="text" class="form-control" id="3" placeholder="Enter 3">
+                  </div>
+                  <button type="submit" onclick="submitForm()"class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
 
     </body>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBTDQbPSHhqbFSurfVbmD4NCkBTv8Y9hFM",
+        authDomain: "scout-3e980.firebaseapp.com",
+        databaseURL: "https://scout-3e980.firebaseio.com",
+        projectId: "scout-3e980",
+        storageBucket: "scout-3e980.appspot.com",
+        messagingSenderId: "269068155472"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </html>
