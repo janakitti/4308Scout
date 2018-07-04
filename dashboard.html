@@ -28,6 +28,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <body>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
           <!-- Brand/logo -->
@@ -49,25 +52,17 @@
         <br>
         <div class="container">
             <div class="well">
-                <h1>Search Team</h1>
-                <div class="input-group">
-                  <input type="text" class="form-control" id="searchBar">
-                  <span class="input-group-btn">
-                    <button class="btn btn-primary" onclick="displayTeam()" type="button">Go!</button>
-                  </span>
-                </div>
-                <br>
-                <table id="display" class="table table-hover table-dark table-responsive" style="width:100%">
-                        <thead>
-                            <tr>
-                                <th>Match</th>
-                                <th>One</th>
-                                <th>Two</th>
-                            </tr>
-                            <tr>
-                            </tr>
-                        </thead>
-                </table>
+                <h1>Dashboard</h1>
+                <div id="piechart"></div>
+
+                <script type="text/javascript">
+                    // Load google charts
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+                    promptChart();
+                </script>
+
+
             </div>
         </div>
 

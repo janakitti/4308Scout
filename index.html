@@ -8,10 +8,14 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-          <img src="logo.png" alt="4308" width="40" height="40">
+          <!--<img src="logo.png" alt="4308" width="40" height="40">-->
+          <a class="navbar-brand" href="#">4308</a>
 
           <!-- Links -->
           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html">Input</a>
             </li>
@@ -26,6 +30,13 @@
         <div class="container">
             <div class="well">
                 <h1>Data Input</h1>
+                <br>
+                <div class="form-group row">
+                  <label for="scoutID" class="col-sm-2 col-form-label">Scouter Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="scoutID" placeholder="Your Name">
+                  </div>
+                </div>
                 <br>
                 <div class="form-group row">
                   <label for="teamNum" class="col-sm-2 col-form-label">Team Number</label>
